@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details PAge</title>
+    <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://i.ytimg.com/vi/-MKapbz0GIo/maxresdefault.jpg");
+
+  /* Full height */
+  height: 200%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+.center {
+  display: block;
+  margin-left: 250px;
+  margin-right: auto;
+  width: 60%;
+  padding-top : 50px;
+
+}
+ol li {
+  background: #D8DCED;
+  margin-left: 7px;
+   border-style: double;
+   border-color: #F2F3F7;
+   border-radius: 8px;
+
+}
+body, html {
+  height: 100%;
+  margin:0;
+}
+</style>
+</head>
+<body>
+<div class = "bg">
+    <ol>
+<div class = "center">
+<!-- For loop logic of jinja template -->
+    <h1 style = " color :#D2D8F3 ;font-size : 35px;border-style:double;border-color:white;border-radius:8px;width:14%; ">  Details </h1>
+{%for i in range(0, len)%}
+
+    <li style=" color:#02081F;font-size:18px;list-style-type: none"> {{data[i]}} </li>
+{%endfor%}
+</ol>
+</div>
+</div>
+</body>
+</html>
