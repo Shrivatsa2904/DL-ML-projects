@@ -1,4 +1,4 @@
-This Code extracts the details from the DrivingLicense image.
+This project can be used to extract the details from the images containig text.
 1.Flask Framework is used to make web app in python to serve the API requests.
 2. pytesseract is used to extract text from the image.
 3.opencv-python,PIL is used to preprocess the image.
